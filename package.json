@@ -1,11 +1,11 @@
 {
-  "name": "react-tour-guide",
-  "version": "0.0.8",
-  "author": "Jake Marsh <jakemmarsh@gmail.com>",
-  "description": "A ReactJS mixin to give new users a popup-based tour of your application.",
+  "name": "react-tour-guide-es6",
+  "version": "0.0.1",
+  "author": "elevensky <yh3417@gmail.com>",
+  "description": "A ReactJS Higher-Order Components to give new users a popup-based tour of your application.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakemmarsh/react-tour-guide.git"
+    "url": "https://github.com/elevensky/react-tour-guide.git"
   },
   "private": false,
   "license": "MIT",
@@ -17,19 +17,25 @@
     "guide"
   ],
   "engines": {
-    "node": ">=0.12.x"
+    "node": ">=4.x"
   },
   "dependencies": {
-    "jquery": "^2.1.3",
-    "react": "^0.13.1"
+    "jquery": "2.2.3",
+    "react": "0.14.8",
+    "react-dom": "0.14.8"
   },
   "devDependencies": {
-    "del": "^1.1.1",
-    "gulp": "^3.8.11",
-    "gulp-if": "^1.2.5",
-    "gulp-react": "^3.0.0",
-    "gulp-strip-debug": "^1.0.2",
-    "run-sequence": "^1.0.2"
+    "babel-preset-es2015": "6.6.0",
+    "babel-preset-react": "6.5.0",
+    "babel-preset-stage-0": "6.5.0",
+    "babel-preset-stage-1": "6.5.0",
+    "del": "1.2.1",
+    "gulp": "3.9.1",
+    "gulp-babel": "6.1.2",
+    "gulp-if": "1.2.5",
+    "gulp-react": "3.1.0",
+    "gulp-strip-debug": "1.1.0",
+    "run-sequence": "1.1.5"
   },
   "scripts": {
     "prepublish": "gulp prod"

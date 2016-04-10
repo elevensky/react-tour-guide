@@ -1,11 +1,10 @@
-'use strict';
-
-var gulp        = require('gulp');
-var del         = require('del');
-var react       = require('gulp-react');
-var runSequence = require('run-sequence');
-var stripDebug  = require('gulp-strip-debug');
-var gulpif      = require('gulp-if');
+import gulp        from 'gulp';
+import babel       from 'gulp-babel';
+import del         from 'del';
+import react       from 'gulp-react';
+import runSequence from 'run-sequence';
+import stripDebug  from 'gulp-strip-debug';
+import gulpif      from 'gulp-if';
 
 gulp.task('clean', function(cb) {
 
@@ -23,6 +22,9 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 
   return gulp.src('./lib/js/**/*.js')
+  .pipe(babel({
+      presets: ['es2015', 'stage-1']
+  }))
   .pipe(react())
   .pipe(gulpif(global.isProd, stripDebug()))
   .pipe(gulp.dest('./dist/js/'));
