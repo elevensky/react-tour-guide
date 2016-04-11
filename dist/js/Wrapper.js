@@ -69,9 +69,7 @@ function withTour(settings, done) {
 
         var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(_class2).call(this, props));
 
-        _this.completionCallback = function (done) {
-          done || function () {};
-        };
+        _this.completionCallback = done || function () {};
 
         _this._renderLayer = function () {
           // By calling this method in componentDidMount() and componentDidUpdate(), you're effectively
