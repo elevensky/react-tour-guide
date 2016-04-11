@@ -4,7 +4,7 @@
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-
+  z-index:1003;
   background-color: #3f94d0;
   cursor: pointer;
 
